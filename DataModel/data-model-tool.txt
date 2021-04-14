@@ -1,0 +1,1 @@
+El modelo de datos se realizó  en Drawio (https://app.diagrams.net/) por simplicidad y facilidad de crear diagramas y exportarlos en diferentes formatos.

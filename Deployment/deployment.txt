@@ -1,0 +1,13 @@
+- El servicio tiene un Dockerfile para poder crear una imagen, esta imagen fue subida a un repositorio publico en Docker Hub, 
+para descargarla y utilizarla, primero hay que asegurarse de tener instalado Docker en el ambiente donde se desea ejecutar.
+Si docker ya está instalado, la imagen puede ser descargada con el siguiente comando:
+
+docker pull xarly1602/data-challenge:latest
+
+- Para ejecutar el servicio, se debe correr el siguiente comando:
+
+docker run -v <path>:/tmp xarly1602/data-challenge
+
+- Ya que los archivos generados serán creados dentro del contenedor, se monta un volumen para poder extraer los archivos y así 
+poder verlos en la maquina local. El <path> que se utiliza en el comando corresponde al directorio donde se encuentran los archivos 
+de entrada (consoles.csv y result.csv). Los reportes de los mejores y peores juegos serán generados en archivos de texto en el mismo <path>.
